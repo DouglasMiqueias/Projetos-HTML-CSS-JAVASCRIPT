@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+
 }
 
 body {
@@ -227,15 +229,25 @@ button:hover {
     transform: scale(1.05);
 }
 
+/* SOBRE */
+
+#sobre{
+  padding: 60px 20px;
+  text-align: center;
+}
+#sobre h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+
+#sobre h2 span {
+    color: #f8c13a;
+  }
 
 /* PRODUTOS */
 
 /* Estilo da seção de produtos */
-#produtos {
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
   #produtos h2 {
     font-size: 2.5em;
     margin-bottom: 40px;
@@ -293,21 +305,72 @@ button:hover {
     color: #555;
     font-size: 1em;
   }
-  
+
+/* SECTION PARCEIROS */
+#parceiros{
+  padding: 60px 20px;
+  text-align: center;
+}
+#parceiros h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+
+#parceiros h2 span {
+    color: #f8c13a;
+  }
+
+  .parceiros-slider-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.slider-parceiros {
+  display: flex;
+
+  animation: slideParceiros 20s linear infinite;
+}
+
+.slider-parceiros .card {
+  min-width: 250px;
+  flex-shrink: 0;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 0 10px #00000033;
+}
+
+/* Animação infinita */
+@keyframes slideParceiros {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
 /* SECTION FORMULARIO */
 
-section.formulario {
+section#formulario {
   padding: 80px 4%;
   padding: 60px 20px;
   text-align: center;
   color: #fff;
 }
-.formulario h2{
+#formulario h2{
   font-size: 2.5em;
   margin-bottom: 40px;
 }
 
-.formulario h2 span{
+#formulario h2 span{
   color: #f8c13a;
 }
 
